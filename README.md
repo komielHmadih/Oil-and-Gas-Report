@@ -263,7 +263,7 @@ DTs bridge **real-time monitoring** (sensor networks), **predictive analytics** 
 - **Safety Management:** **Virtual training** (9%) and **emergency response simulations** reduce on-site risks (e.g., offshore evacuation drills).  
 - **Operational Efficiency:** **Project lifecycle management** (22%) and **automated drilling** optimize resource use and minimize downtime.  
 
-**Coverage Gaps:** The review focuses heavily on *upstream* (exploration/production) with limited *mid/downstream* (pipelines/refining) case studies. Workflow diagrams like `![Figure 5: DT implementation roadmap](images/3.5.png)` are referenced but lack granular technical workflows for maintenance protocols.  
+**Coverage Gaps:** The review focuses heavily on *upstream* (exploration/production) with limited *mid/downstream* (pipelines/refining) case studies. Workflow diagrams like ![Figure 5: DT implementation roadmap](images/3.5.png) are referenced but lack granular technical workflows for maintenance protocols.  
 
 ---
 
@@ -278,7 +278,7 @@ Data acquisition relied on **SCADA systems** and **edge processors** to handle h
 **Multi-physics simulations** (FEA for structural integrity) and **machine learning** (LSTM networks for predictive failures) dominated. Validation used **historical failure datasets** but lacked standardized benchmarks.  
 
 ### d) Cybersecurity Implementation  
-**Encrypted communication** (TLS/SSL) and **edge security modules** protected data transit. Anomaly response involved **real-time alerting**; however, specifics on intrusion detection were sparse. Figure 18 (`![Figure 18: Cyber vulnerability matrix](images/3.6.png)`) highlighted drilling/production as high-risk phases.  
+**Encrypted communication** (TLS/SSL) and **edge security modules** protected data transit. Anomaly response involved **real-time alerting**; however, specifics on intrusion detection were sparse. Figure 18 (![Figure 18: Cyber vulnerability matrix](images/3.6.png)) highlighted drilling/production as high-risk phases.  
 
 ### e) Critical Evaluation  
 > **Table 2: Methodology Evaluation**  
@@ -288,7 +288,7 @@ Data acquisition relied on **SCADA systems** and **edge processors** to handle h
 > | **Model Validation** | Use of real industrial case studies (19%)  | Limited validation against live systems  |  
 > | **Security**         | Risk-aware frameworks (Fig 18)             | No penetration testing details           |  
 
-**Technical Visuals:**  
+
 > ![Figure 4: Deloitte’s DT process (Create-Communicate-Aggregate-Analyze-Insight-Act)](images/3.7.png) 
 
 ---
@@ -312,7 +312,8 @@ Data acquisition relied on **SCADA systems** and **edge processors** to handle h
 > |-----------------|-------------|--------------------------|  
 > | Downtime        | 40% ↓       | Predictive maintenance   |  
 > | Design cycle    | 66% ↓       | Virtual commissioning    |  
-> | Training safety | 30% ↑       | VR emergency drills      |  
+> | Training safety | 30% ↑       | VR emergency drills      |
+
 > ![Figure 6: Publication trends (2010-2020)](images/3.9.png) 
 
 **Top Industrial Insights:**  
@@ -323,7 +324,7 @@ Data acquisition relied on **SCADA systems** and **edge processors** to handle h
 ---
 
 ## 7. Conclusion and Project Contribution
-This review confirms DT’s transformative potential for IoTLab-Projects, directly supporting **predictive maintenance** (asset health monitoring), **safety** (VR training), and **operational efficiency** (simulation-driven optimization). Frameworks like `![Figure 5: DT implementation roadmap](path/figure5.jpg)` provide actionable blueprints for staged deployment.  
+This review confirms DT’s transformative potential for IoTLab-Projects, directly supporting **predictive maintenance** (asset health monitoring), **safety** (VR training), and **operational efficiency** (simulation-driven optimization). Frameworks like ![Figure 5: DT implementation roadmap](images/3.1.png) provide actionable blueprints for staged deployment.  
 
 **Future Research Recommendations:**  
 1. Develop **standardized data protocols** for legacy O&G systems.  
