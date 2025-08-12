@@ -14,11 +14,12 @@ The study demonstrates three pivotal advancements: First, Gradient Boosted Tree 
 ## 3. Overview/Introduction  
 Oil and gas infrastructure faces escalating vulnerabilities from cyber-physical threats, where attacks on control systems like PID tampering or data spoofing can trigger catastrophic safety failures. Traditional DTs fall short in modeling component interdependencies and lack real-world validation under attack conditions. This study addresses these gaps through a comprehensive DT framework replicating a two-phase transport system, using actual PID controllers from the physical plant to ensure behavioral fidelity. The solution leverages MQTT protocol for 10Hz sensor data streaming and employs T² Hotelling statistics to detect deviations in system behavior. Key innovations include the first documented implementation of parallel DTs for cybersecurity and rigorous validation of air-water system scalability to hydrocarbon environments using dimensionless analysis (Atwood/Reynolds numbers).  
 
-**Integrated Visuals:**  
-> ![Figure 1: Research Methodology](image/1.png)  
+
+> ![Figure 1: Research Methodology](images/1.1.png)  
 *Comprehensive workflow for DT development and deployment (Article Fig.1)*  
-> **Table 1: Literature Clusters**  
-*Taxonomy of 45 seminal studies on DT cybersecurity gaps (Article Table 1)*  
+> **Table 1: Literature Clusters**
+> ![table 1: Literature Clusters](images/1.5.png)
+> *Taxonomy of 45 seminal studies on DT cybersecurity gaps (Article Table 1)*  
 
 The framework directly enables operational optimization by simulating control adjustments during cyber-attacks, transforming passive monitoring into active resilience management.  
 
@@ -35,8 +36,8 @@ This research makes significant strides toward the project's core objectives whi
 
 For predictive maintenance, the GBT-based detection system identifies developing faults 12x faster than traditional threshold alarms. In safety management, the parallel DT architecture automatically disconnects compromised systems during simulated PID tampering, physically overriding valve controls to prevent hazardous pressure buildups. Operational efficiency gains are demonstrated through synchronized PID control, which minimizes pressure fluctuations. However, the absence of quantitative safety metrics and cost-benefit analysis represents a significant limitation for industrial adoption.  
 
-**Integrated Visuals:**  
-> ![Figure 2: DT Architecture](figure2.jpg)  
+
+> ![Figure 2: DT Architecture](images/1.2.png)  
 *Bidirectional control flow with embedded PID logic (Article Fig.8)*  
 
 ---
@@ -62,10 +63,11 @@ The parallel DT architecture represents a paradigm shift in cyber-resilience. Th
 
 While the methodology excels in control logic replication and sensor integration, air-phase dynamics (compressibility, temperature dependence) remain inadequately captured, causing prediction drift during rapid transients. The water-air physical model requires correction factors (density, viscosity ratios) for oil-gas applicability, though dimensionless analysis confirms turbulent regime similarities. Computational latency (38s GBT training) currently precludes real-time model updates, suggesting future edge-computing integration.  
 
-**Technical Visuals:**  
-> **Table 2: Algorithm Performance Benchmark**  
+
+> **Table 2: Algorithm Performance Benchmark**
+> ![Table 2: Algorithm Performance Benchmark](images/1.6.png)
 *Comparative metrics across 17 system variables (Article Table 6)*  
-> ![Figure 3: Sensor Network Topology](figure3.jpg)  
+> ![Figure 3: Sensor Network Topology](images/1.3.png)  
 *MQTT-based communication architecture (Article Fig.4)*  
 
 ---
@@ -83,10 +85,11 @@ Three insights emerge for oil/gas implementation:
 2. **Algorithm Selection:** Prioritize GBT models for transient-state prediction in pumps/tanks.  
 3. **Phase-Specific Instrumentation:** Integrate real-time air composition sensors to correct density drift.  
 
-**Results Visuals:**  
-> **Table 3: Operational Test Matrix**  
+
+> **Table 3: Operational Test Matrix**
+> ![Table 3: Operational Test Matrix](images/1.7.png)
 *36 validated scenarios including PID failure modes (Article Table 3)*  
-> ![Figure 4: Anomaly Detection Threshold](figure4.jpg)  
+> ![Figure 4: Anomaly Detection Threshold](images/1.4.png)  
 *T² Hotelling breach during cyber-attack simulation (Article Fig.15a)*  
 
 ---
@@ -102,6 +105,118 @@ Future work should:
 3. Validate the framework on offshore platforms with methane-specific sensors.  
 The proposed 5-level DT maturity model (Descriptive to Autonomous) provides a strategic roadmap for phased industry adoption.  
 
-**Framework Visual:**  
-> ![Figure 5: DT Evolution Framework](figure5.jpg)  
-*Five-level maturity model for industrial implementation (Article Section 6)*  
+ ---
+# Second Article
+ ## 1. Title and Authors  
+**Article:** Human Centric Digital Transformation and Operator 4.0 for the Oil and Gas Industry  
+**Authors:** Thumeera R. Wanasinghe, Trung Trinh, Trung Nguyen, Raymond G. Gosine, Lesley Anne James, Peter J. Warrian  
+**Year:** 2021  
+
+This research proposes a human-centric digital transformation framework integrating **digital twins**, **wearable technologies**, and **IIoT** to address health/safety risks, data inefficiencies, and workforce challenges in oil and gas operations. It shifts from business-centric to worker-centric digitalization, directly enhancing predictive maintenance, real-time safety monitoring, and operational decision-making in hydrocarbon facilities. Industrial relevance lies in mitigating hazards in remote/extreme environments while bridging expertise gaps via cyber-physical systems.  
+
+---
+
+## 2. Abstract Summary  
+- **Key Claims:**  
+  - Digital transformation in oil/gas is predominantly business-centric, neglecting worker-specific challenges.  
+  - A human-centric framework leverages **digital twins**, **wearables**, and **big data analytics** to improve worker safety, training, and decision-making.  
+  - Technologies like **AR/VR** and **robotics** enable risk-free training and remote inspections.  
+  - **Blockchain** streamlines contract execution and payments for field personnel.  
+- **Alignment with Project Goals:** The framework prioritizes **predictive maintenance** (via asset-twin simulations), **safety management** (real-time biometric/environmental tracking), and **operational efficiency** (data-driven decisions using edge-cloud analytics), directly supporting IoTLab’s objectives for resilient hydrocarbon infrastructure.  
+
+---
+
+## 3. Overview/Introduction  
+The oil/gas industry faces critical gaps: **elevated safety hazards**, **ineffective on-the-job training**, **data underutilization**, and **delayed payments**. The proposed human-centric framework addresses these via three domains:  
+- **Operator Domain**: Enhanced workers (Operator 4.0) using wearables and AR/VR.  
+- **Physical Domain**: IIoT-enabled assets with edge/fog processing.  
+- **Cyber Domain**: **Digital twins** (asset/operator replicas), data lakes, and analytics.  
+> ![Figure 1: Human-Centric Digital Transformation Framework](images/2.1.png) 
+> **Table 1: Elements of Operator 4.0** (Super-strength, Augmented, Virtual, etc.)
+> ![table 1: Elements of Operator 4.0](images/2.2.png)
+The framework enables **real-time monitoring** of equipment/worker health, **predictive analytics** for failure prevention, and **optimization** of workflows through simulation-driven control.  
+
+---
+
+## 4. Objectives Alignment  
+| IoTLab Objective | Article Coverage | Gaps |  
+|------------------|------------------|------|  
+| **Predictive Maintenance** | Asset-twin simulations predict failures; analytics optimize maintenance schedules. | Limited field validation data. |  
+| **Safety Management** | Wearables track biometrics/location; sensors monitor toxic gases/temperature. | Privacy concerns for worker data. |  
+| **Operational Efficiency** | Fog/edge processing enables real-time decisions; blockchain automates contracts. | Cybersecurity vulnerabilities in IIoT. |  
+> ![Figure 2: Operator 4.0 Components](images/2.3.png)  
+Coverage gaps include insufficient **cross-border data governance** and **hazard-zone certification** for wearables in explosive environments (Zone 0/1).  
+
+---
+
+## 5. Methodology Assessment  
+### a) Experimental Design  
+- **System**: Tri-domain architecture (operator, physical, cyber).  
+- **Sensors**: IIoT-enabled wearables (physiological/environmental), smart actuators.  
+- **Control Logic**: Edge/fog processing for time-critical responses; cloud-based digital twins for simulations.  
+
+### b) Data Pipeline  
+- **Acquisition**: Realtime data from wearables (operator) and IIoT sensors (assets).  
+- **Preprocessing**: Edge devices filter noise; fog nodes aggregate data for cyber domain.  
+
+### c) Model Development  
+- **Algorithms**: Machine learning for anomaly detection; AI for predictive maintenance.  
+- **Validation**: Digital-twin simulations of asset behavior/operator actions.  
+
+### d) Cybersecurity Implementation  
+- **Protection**: Encryption for data in transit/rest; authentication for blockchain transactions.  
+- **Anomaly Response**: Real-time monitoring of network vulnerabilities; compliance with GDPR/PIPEDA.  
+
+### e) Critical Evaluation  
+**Table 2: Methodology Evaluation**  
+| Aspect | Strengths | Weaknesses |  
+|--------|-----------|------------|  
+| **Scalability** | Fog/edge computing reduces latency. | High data volume strains real-time processing. |  
+| **Interoperability** | Wireless IIoT ensures device connectivity. | Non-standard data formats hinder integration. |  
+| **Safety Compliance** | Sensors certified for hazardous zones. | Battery limitations in Zone 0/1 environments. |  
+| **Human-Machine Interface** | AR/VR improves situational awareness. | Bulky wearables restrict mobility in field work. |  
+
+> ![Figure 3: Cyber-Physical Interactions](images/2.4.png) 
+
+---
+
+## 6. Results and Relevance  
+**Outcome Alignment:**  
+1. **Failure Reduction**: Asset twins predicted equipment issues (Shell’s analytics reduced drilling failures).  
+2. **Cost Savings**: AR-based remote inspections cut downtime (e.g., flare stack drones vs. scaffolding).  
+3. **Threat Response**: Real-time gas leak detection via FLIR GF77 thermal cameras.  
+4. **Training Enhancement**: VR platforms trained drilling crews for emergencies (Eni’s 300-well dataset).  
+5. **Data Optimization**: Fog analytics utilized 99% of sensor data (vs. 1% in manual reviews).  
+
+**Literature Comparison:**  
+- Validates **McKinsey’s findings** (2017) on automation increasing production by 6–8%.  
+- Contradicts **Frey & Osborne (2013)**: Human roles persist via Operator 4.0 augmentation.  
+- Extends **Romero et al. (2016)** by adding "Remote Operator" for oil/gas-specific tasks.  
+
+> **Table 3: Key Results**  
+> | Metric | Improvement | Technology |  
+> |--------|-------------|------------|  
+> | Data Utilization | 1% → 99% | Fog/Edge Analytics |  
+> | Training Risk | 70% reduction | VR Simulations |  
+> | Payment Delay | Near-real-time | Blockchain |
+
+> ![Figure 4: Big Data Analytics Workflow](images/2.5.png)  
+
+**Top Industrial Insights:**  
+1. **Digital twins** enable predictive maintenance by simulating failure scenarios.  
+2. **Wearable networks** reduce safety incidents via real-time hazard alerts.  
+3. **Blockchain smart contracts** eliminate bureaucratic delays in contractor payments.  
+
+---
+
+## 7. Conclusion and Project Contribution  
+The framework advances IoTLab’s goals by:  
+- Enabling **predictive maintenance** through asset-twin simulations.  
+- Enhancing **safety** via physiological/environmental monitoring.  
+- Optimizing **operations** with AR-assisted repairs and data-driven decisions.  
+> ![Figure 5: Integrated Human-Cyber-Physical System](images/2.1.png)  
+
+**Future Recommendations:**  
+1. Field-validate the framework in offshore platforms.  
+2. Develop lightweight, Zone 0-certified wearables.  
+3. Integrate **quantum-resistant encryption** for IIoT cybersecurity.  
