@@ -747,3 +747,114 @@ The study provides a validated **IEE framework** (Fig. 2) for IoTLab’s predict
 3. Standardize **AR/VR training modules** for emergency response.  
 
 > ![Figure 6: O&G Digital Twin Architecture](images/7.6.png)  
+---
+# Eighth Article
+## 1. Title and Authors  
+**Article Title:** Application of digital twins for maintenance in the gas and oil sector  
+**Authors:** Daria Levaniuk  
+**Examiners:** Assistant Professor Annika Wolff, Master of Technology Elizaveta Tereshchenko  
+**Year:** 2022  
+
+This thesis establishes the industrial relevance of **Digital Twins (DTs)** for predictive maintenance in hydrocarbon infrastructure, emphasizing their role in mitigating unplanned downtime of critical assets like Electrical Submersible Pumps (ESPs). By integrating real-time sensor data with simulation models, DTs enable **condition-based maintenance (CBM)** to optimize operational efficiency and reduce costs in high-risk, remote oil/gas facilities—directly addressing Industry 4.0 transformation needs.  
+
+---
+
+## 2. Abstract Summary  
+- **Key Claims:**  
+  - DTs reduce ESP downtime by **71%** through early failure prediction, slashing repair costs.  
+  - Implementation achieves **30% productivity gains** in oil extraction via optimized operational modes.  
+  - Challenges include data standardization gaps, cybersecurity risks, and organizational readiness (digital maturity Levels 2–4).  
+  - Economic payback occurs within **5–7 years** despite high initial costs (~$411,000 per well).  
+
+This aligns with IoTLab-Projects’ goals by demonstrating DTs’ capacity for **predictive analytics** (e.g., simulating salt deposition failures in ESPs) and **safety enhancement** through remote monitoring of inaccessible sites, directly supporting operational risk reduction.  
+
+---
+
+## 3. Overview/Introduction  
+The problem centers on unplanned shutdowns in oil/gas equipment (e.g., ESP failures causing 40% production losses) due to reactive maintenance strategies. The thesis positions DTs as **cyber-physical systems** bridging sensor networks and virtual models to enable **proactive maintenance**. Key gaps addressed include the lack of economic validation for DT deployments and fragmented architecture standards.  
+
+> ![Figure 3: Digital twin concept](images/8.1.png) 
+> ![Figure 4: Digital vs. intelligent process control](images/8.2.png) 
+> ![Figure 4: Digital vs. intelligent process control](images/8.3.png)  
+> **Table 1: Basic methods of data processing in the digital twin**
+> ![Table 1: Basic methods of data processing in the digital twin](images/8.4.png)
+
+DTs enhance real-time monitoring by correlating operational data (pressure, temperature) with **predictive simulations** (e.g., wear scenarios), optimizing decision-making through integrated **ISO 55000 asset management** frameworks.  
+
+---
+
+## 4. Objectives Alignment  
+- **Predictive Maintenance:** DT-driven CBM cuts ESP downtime from 36 to 10 days/year (Table 3).  
+- **Safety Management:** Remote anomaly detection eliminates 71% of field engineer interventions in hazardous zones.  
+- **Operational Efficiency:** Real-time data analytics increase oil recovery by 30% via optimized pump operations.  
+
+**Coverage Gaps:** Limited detail on **threat response protocols** for cyber-attacks and insufficient exploration of **training simulations** for operators.  
+
+> ![Figure 11: Maintenance process](images/8.5.png) 
+
+---
+
+## 5. Methodology Assessment  
+### a) Experimental Design  
+- **System:** ESP pumps with IoT sensors (vibration, pressure, temperature) feeding data to Bentley’s iTwin platform via **Azure IoT Hub**.  
+- **Control Logic:** "See-Think-Do" framework (Page 22) for real-time diagnostics and automated alerts.  
+
+### b) Data Pipeline  
+- **Acquisition:** Sensors → Edge gateways → Cloud storage (Azure).  
+- **Preprocessing:** Anomaly filtering, format standardization, and fusion of design/operational data.  
+
+### c) Model Development  
+- **Algorithms:** Machine learning (supervised) for failure prediction using historical ESP data.  
+- **Validation:** Calibration against physical pump performance metrics (Page 49).  
+
+### d) Cybersecurity Implementation  
+- **Strategies:** Encryption via Azure protocols; no intrusion detection details provided.  
+- **Anomaly Response:** Manual intervention prioritization (Page 37).  
+
+### e) Critical Evaluation  
+**Table 2: Methodology Evaluation**  
+| Aspect             | Strengths                                  | Weaknesses                                  |  
+|--------------------|--------------------------------------------|---------------------------------------------|  
+| **Data Integrity** | Multiphysics model calibration (Page 50)  | Sparse failure-mode data (Page 37)          |  
+| **Scalability**    | Cloud-based Azure/iTwin architecture       | Inflexible to hardware changes (Page 37)    |  
+| **Security**       | ISO 55000 compliance (Page 38)             | No threat-modeling for IIoT networks        |  
+ 
+> ![Figure 7: Key architecture components](images/8.6.png) 
+> ![Figure 15: Architecture of DT](images/8.7.png) 
+
+---
+
+## 6. Results and Relevance  
+- **Failure Reduction:** 71% fewer ESP breakdowns via **predictive alerts** (Page 50).  
+- **Cost Savings:** $68,250/year cash flow from reduced downtime (Table 3).  
+- **Threat Response:** Not quantified; relies on procedural controls.  
+- **Training Enhancement:** Limited to interface familiarization (Page 51).  
+- **Data Optimization:** Unified storage cuts diagnostic time by 65% (Page 46).  
+
+**Literature Comparison:**  
+- Validates Wanasinghe et al. (2020) on **data standardization barriers** but contradicts Rasheed (2019) by proving economic viability despite cybersecurity gaps.  
+- Extends Eremin (2018) with empirical **ROI calculations** for ESPs.  
+
+> **Table 3: Economic parameters and calculations**
+> ![Table 3: Economic parameters and calculations](images/8.8.png)  
+> ![Figure 14: Data process after applying DT](images/8.9.png)
+
+**Actionable Insights:**  
+1. Prioritize **component-level DTs** (e.g., ESPs) for rapid ROI in maintenance-heavy assets.  
+2. Adopt **ISO 55000** to align DT deployment with organizational asset management.  
+3. Address **digital maturity** (Levels 3–5) before full-scale DT integration.  
+
+---
+
+## 7. Conclusion and Project Contribution  
+This research validates DTs as transformative for predictive maintenance, directly supporting IoTLab’s goals through:  
+- **Architecture frameworks** (Figure 15) for scalable IIoT integration.  
+- **Economic models** proving 5–7-year payback despite high capex.  
+- **CBM workflows** reducing safety risks via remote operations.  
+
+> ![Figure 10: Digital twin lifecycle](images/8.10.png) 
+
+**Future Recommendations:**  
+- Develop **quantum-computing-enhanced DTs** for real-time multiphysics simulations (Page 56).  
+- Expand **autonomous decision-making** tests for threat response.  
+- Standardize **cross-platform data protocols** to address interoperability gaps.  
