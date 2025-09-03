@@ -908,7 +908,9 @@ The problem addressed is the lack of **robustness** and **uncertainty-aware** di
 
 Key figures and tables referenced:  
 ![Figure 1: Latin hypercube sampling schematic representation](images/9.1.png)
+
 **Table 1: Hyperparameter search space for HYPERBAND**
+
 ![Table 1: Hyperparameter search space for HYPERBAND](images/9.2.png)
 
 The introduction establishes the DT’s role in enabling **real-time monitoring**, **predictive analytics**, and **operational optimization**—critical for high-risk environments like offshore oil and gas platforms.
@@ -947,7 +949,7 @@ The paper does not explicitly detail cybersecurity measures. Protection strategi
 | Online Adaptation | Cognitive tack enables self-awareness and drift correction | Delayed response in unidentifiable drift scenarios (e.g., Scenario 2) |  
 | Cybersecurity | Not explicitly addressed; operational safety focused | Lack of encryption, access control, or cyber-attack resilience strategies |  
 
-Technical visuals:  
+
 ![Figure 3: Burn-in MCMC and full chain for parameters](images/9.4.png)
 
 ## 6. Results and Relevance  
@@ -969,6 +971,7 @@ Performance visuals:
 |--------|-------------|-------------|-------------|  
 | MSE    | 1.37e-7     | 8.46e-7     | 1.23e-7     |  
 | MAE    | 2.69e-4     | 9.79e-4     | 2.80e-4     |  
+
 ![Figure 4: Parity graphics and prediction uncertainty](images/9.5.png)  
 
 Top industrial insights:  
