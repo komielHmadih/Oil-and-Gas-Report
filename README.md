@@ -12,6 +12,26 @@ The oil and gas industry navigates compounding pressures: intensifying cyber-phy
 
 ---
 
+### Survey Phase Execution and Article Classification
+
+The survey phase was conducted systematically according to the project's methodology. Scientific articles were retrieved from major databases using keywords such as "Digital Twin," "Oil and Gas," "Predictive Maintenance," and "Process Optimization." The selected literature was then analyzed and categorized into the core domains relevant to Digital Twin applications in industrial settings.
+
+Below is the classification of the reviewed articles:
+
+| Article Number | Article Title | Primary Domain | Secondary Domain | Key Contribution |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | A review of the roles of digital twin in CPS-based production systems | Conceptual Frameworks & Integration | - | Establishes DT as the core bridge between cyber and physical worlds in complex systems. |
+| 2 | Toward a digital twin for real-time geometry assurance in individualized production | Process Optimization | Asset Monitoring | Demonstrates DT for real-time quality control and precision assurance in manufacturing. |
+| 3 | Product lifecycle management with digital twin | Conceptual Frameworks & Integration | Asset Monitoring | Proposes an integrated DT model for managing assets across their entire lifecycle. |
+| 4 | The digital twin of an organization for disaster management in smart factories | Safety & Disaster Management | - | Scales the DT concept to an organizational level for emergency response and crisis simulation. |
+| 5 | A systematic design approach for service systems based on digital twin | Conceptual Frameworks & Integration | - | Focuses on designing new business models and service offerings centered around DT data. |
+| 6 | Digital twin-driven fault diagnosis for DNC equipment | Asset Monitoring & Predictive Maintenance | - | A practical case study using DT and AI for real-time fault detection and diagnosis in machinery. |
+| 7 | Digital twin-based WEEE recycling | Process Optimization | - | Applies DT to optimize a recycling process flow, highlighting its use for efficiency gains. |
+| 8 | The enterprise system for digital twin of a product | Conceptual Frameworks & Integration | - | Addresses the critical challenge of integrating DT with existing enterprise IT systems (ERP, MES). |
+| 9 | Digital twin and its potential applications | Broader Applications & Review | - | Provides a high-level survey of DT's transformative potential across various industries. |
+
+---
+
 # First Article
 ## 1. Title and Authors  
 The article "Leveraging Digital Twin for Operational Resilience in the Oil and Gas Industry" (2025) by Mazzuto et al. presents a groundbreaking framework for implementing Digital Twins (DTs) in hydrocarbon transport systems. Authored by researchers from Università Politecnica delle Marche, this work bridges critical gaps in industrial DT applications by developing a high-fidelity replica of an experimental oil/gas transportation system. The core innovation lies in its integration of real PID controllers and predictive analytics to address cyber-physical threats, establishing a new benchmark for operational resilience in critical infrastructure. The experimental validation of bidirectional control mechanisms and scalability assessments for industrial deployment make this particularly relevant to oil/gas operators facing evolving security challenges.  
